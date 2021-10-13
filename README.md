@@ -4,7 +4,6 @@ Express.js / Node.js / ES6+
 # Objective
 As a small business owner, I want an application that can be used to write, save, and delete notes. Application will use an express backend, plus save & retrieve notes from data.
 
-Deployed app: https://salty-forest-70625.herokuapp.com  <br/> 
 Github Page: https://github.com/tonyslonaker/Express-Challenge-Note-Taker <br/> 
 
 # Express: Note Taker
