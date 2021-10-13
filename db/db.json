@@ -1,11 +1,1 @@
-[
-    {
-        "title":"First Note",
-        "text":"First Note","id":1
-    },
-        
-    {
-        "title":"Second Note",
-        "text":"Second Note","id":2       
-    }
-]
+[{"title":"First Note","text":"First Note","id":1},{"title":"Second Note","text":"Second Note","id":2},{"title":"Test Note","text":"Saved file?","id":3},{"title":"Third Note","text":"Third note","id":4}]

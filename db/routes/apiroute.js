@@ -17,9 +17,9 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
   // Routes - one to index, one to notes
   app.get('/api/notes', function(req, res) {
-    fs.readFile('./db/db.json', (err, data) => {
+    fs.readFile('../db/db.json', (err, data) => {
       if (err) throw err;
-      dbData = JSON.parse(data);
+      const dbData = JSON.parse(data);
       res.send(dbData);
     });
   });
@@ -37,7 +37,7 @@ module.exports = function(app) {
   app.post('/api/notes', function(req, res) {
     const userNotes = req.body;
 
-    fs.readFile('./db/db.json', (err, data) => {
+    fs.readFile('../db/db.json', (err, data) => {
       if (err) throw err;
       dbData = JSON.parse(data);
       dbData.push(userNotes);
@@ -47,11 +47,11 @@ module.exports = function(app) {
         number++;
         return dbData;
       });
-      console.log(dbData);
+      console.log("New Note", dbData);
 
       stringData = JSON.stringify(dbData);
 
-      fs.writeFile('./db/db.json', stringData, (err, data) => {
+      fs.writeFile('../db/db.json', stringData, (err, data) => {
         if (err) throw err;
       });
     });
